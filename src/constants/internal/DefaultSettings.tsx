@@ -34,7 +34,7 @@ export const DefaultSettings: Settings = {
 	},
 	tooltip: {
 		mode: "CLOSE",
-		text: "Talk to me! 😊",
+		text: "How can I help you? 😊",
 	},
 	chatButton: {
 		icon: ChatIcon,
@@ -42,9 +42,9 @@ export const DefaultSettings: Settings = {
 	header: {
 		title: (
 			<div style={{cursor: "pointer", margin: 0, fontSize: 20, fontWeight: "bold"}} onClick={
-				() => window.open("https://github.com/tjtanjin/")
+				() => window.open("https://github.com/sainipray/")
 			}>
-				Tan Jin
+				Neeraj Kumar
 			</div>
 		),
 		showAvatar: true,
@@ -137,8 +137,8 @@ export const DefaultSettings: Settings = {
 	},
 	footer: {
 		text: (
-			<div style={{cursor: "pointer", display: "flex", flexDirection: "row", alignItems: "center", columnGap: 3}} 
-				onClick={() => window.open("https://react-chatbotify.com")}
+			<div style={{cursor: "pointer", display: "flex", flexDirection: "row", alignItems: "center", columnGap: 3}}
+				onClick={() => window.open("https://consolebit.com/")}
 			>
 				<span key={0}>Powered By </span>
 				<div
@@ -155,7 +155,7 @@ export const DefaultSettings: Settings = {
 				>
 					<ChatIcon style={{ width: "80%", height: "80%", fill: "#fff" }} />
 				</div>
-				<span key={2} style={{fontWeight: "bold"}}> React ChatBotify</span>
+				<span key={2} style={{fontWeight: "bold"}}> ConsoleBit</span>
 			</div>
 		),
 		buttons: [Button.FILE_ATTACHMENT_BUTTON, Button.EMOJI_PICKER_BUTTON]

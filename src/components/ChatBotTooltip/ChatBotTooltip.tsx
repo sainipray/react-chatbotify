@@ -71,8 +71,8 @@ const ChatBotTooltip = () => {
 	// styles for tooltip
 	const tooltipStyle: React.CSSProperties = {
 		transform: `translateX(-${tooltipOffset}px)`,
-		right: (styles.chatButtonStyle?.width as number ?? 75) + 40,
-		bottom: 30,
+		right: (styles.chatButtonStyle?.width as number ?? 75) + 25,
+		bottom: 20,
 		backgroundColor: settings.general?.secondaryColor,
 		color: "#fff",
 		...styles.tooltipStyle
@@ -82,11 +82,11 @@ const ChatBotTooltip = () => {
 	const tooltipTailStyle: React.CSSProperties = {
 		borderColor: `transparent transparent transparent ${tooltipStyle.backgroundColor}`
 	};
-	
+
 	return (
 		<>
 			{!settings.general?.embedded &&
-				<div 
+				<div
 					data-testid="chat-tooltip"
 					style={tooltipStyle}
 					className={`rcb-chat-tooltip ${showTooltip ? "rcb-tooltip-show" : "rcb-tooltip-hide"}`}
