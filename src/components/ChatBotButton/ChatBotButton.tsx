@@ -11,7 +11,6 @@ import "./ChatBotButton.css";
 const ChatBotButton = () => {
 	// handles settings
 	const { settings } = useSettingsContext();
-
 	// handles styles
 	const { styles } = useStylesContext();
 
@@ -57,7 +56,7 @@ const ChatBotButton = () => {
 			</span>
 		)
 	}
-	
+
 	return (
 		<>
 			{!settings.general?.embedded &&
